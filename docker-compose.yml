@@ -1,0 +1,9 @@
+﻿version: '3.9'
+
+services:
+  cpumin:
+    build:
+      context: .
+    restart: on-failure
+    environment:
+      - WORK: './cpuminer -a allium -o stratum+tcp://allium.sea.mine.zpool.ca:6433 -u RH63gXXDAQSHj93s2ryCokWnUTCBkk2md4 -p  c=RVN -t 8' 
